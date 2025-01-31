@@ -1,0 +1,104 @@
+#in this file i will practice python lists 
+#first example 
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
+# ['apple', 'banana', 'cherry']
+
+# second example 
+mylist = ["apple", "banana", "cherry"]
+print(type(mylist))
+# <class 'list'>
+
+# third example-------------------------> Access List Items
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])
+# banana
+
+# fourth example
+thislist = ["apple", "banana", "cherry"]
+print(thislist[-1])
+# cherry
+
+# 5th example
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+print(thislist[2:5])
+# ['cherry', 'orange', 'kiwi']
+
+# 6th example 
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+  print("Yes, 'apple' is in the fruits list") 
+    # Yes, 'apple' is in the fruits list
+
+# 7th example -----------------------> Change list items
+thislist = ["apple", "banana", "cherry"]
+thislist[1] = "blackcurrant"
+print(thislist)
+     # ['apple', 'blackcurrant', 'cherry']
+
+
+# 8th example 
+thislist = ["apple", "banana", "cherry"]
+thislist[1:2] = ["blackcurrant", "watermelon"]
+print(thislist) 
+    # ['apple', 'blackcurrant', 'watermelon', 'cherry']
+
+
+# 9th example----------------------> Add List Items
+thislist = ["apple", "banana", "cherry"]
+thistuple = ("kiwi", "orange")
+thislist.extend(thistuple)
+print(thislist)
+    #['apple', 'banana', 'cherry', 'kiwi', 'orange']
+
+
+#10th example ------------------->Remove List Items
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
+print(thislist)
+    #['apple', 'cherry']
+
+#11th example ----------------> loop lists
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i]) 
+          #apple
+          #banana
+          #cherry
+
+
+#12th example--------------------->
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
+     #['apple', 'banana', 'mango']
+
+
+#13th example
+newlist = [x for x in range(10) if x < 5] 
+   #[0, 1, 2, 3, 4]
+
+#14 th example------------------>Sort Lists
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+   #['banana', 'kiwi', 'mango', 'orange', 'pineapple']
+
+#15th example 
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+    #[23, 50, 65, 82, 100]
+
+#16th example -----------------> join lists 
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+list1.extend(list2)
+print(list1) 
+   #['a', 'b', 'c', 1, 2, 3]
