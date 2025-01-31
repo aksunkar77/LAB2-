@@ -1,0 +1,32 @@
+#in this file i will practice python dictonaries 
+#example 1
+thisdict =	{
+  "name": "AKSUNKAR",
+  "surname": "SEREKBOL",
+  "year": 2005
+}
+print(thisdict)
+   #{'name': 'AKSUNKAR', 'surname': 'SEREKBOL', 'year': 2005}
+
+#2nd example ------------------>Access items
+info = {
+"name": "Aksunkar",
+"surname": "Serekbol",
+"year": 2005
+}
+x = info.keys()
+print(x) 
+    #dict_keys(['name', 'surname', 'year'])
+info["age"] = "19"
+print(x) #after the change
+     #dict_keys(['name', 'surname', 'year', 'age'])
+
+
+#3rd example -------------->change items
+thisdict =	{
+  "name": "Aksunkar",
+  "surname": "Serekbol",
+  "year": 2005
+}
+thisdict.update({"year": 2020}) 
+   #dict_keys(['name', 'surname', 'year', 'age'])
